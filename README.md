@@ -1,10 +1,8 @@
 Badkitty
 =========
-#### php version of p1encode use to generate and encode a powershell based metasploit payloads.
+#### use to generate and encode a powershell based metasploit payloads.
 
-Use to generate and encode a powershell based metasploit payloads.-
-md5 hash cracker (still working at this method)-
-Brute forcing (coming soon)
+Use to generate and encode a powershell based metasploit payloads.
 
 Writen by Ay@nSul
 
