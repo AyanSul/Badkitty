@@ -207,12 +207,12 @@ fclose($mf);
 echo "compiling...";
 
 if ($exe_arch == "32"){
-    system("i686-w64-mingw32-gcc c_file_temp.c -o kitty_.exe");
+    system("i686-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
 }else{ 
-    system("x86_64-w64-mingw32-gcc c_file_temp.c -o kitty_.exe");
+    system("x86_64-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
 }
 system("rm c_file_temp.c");
-echo "kitty_.exe created!\n";
+echo "kitty.exe created!\n";
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
 if(file_exists("meta.rc")){
