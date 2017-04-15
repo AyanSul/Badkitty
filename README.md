@@ -2,8 +2,6 @@ Badkitty
 =========
 #### use to generate and encode a powershell based metasploit payloads.
 
-Use to generate and encode a powershell based metasploit payloads.
-
 Writen by Ay@nSul
 
 Available output types:
