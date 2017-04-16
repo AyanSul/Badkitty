@@ -110,8 +110,8 @@ echo $a[$random_keys]."\n";
 echo "\e[92m\e[1m +-- -- +=[ Script Name : Badkitty | Author: Ay@nSul | Cyber2kidds@gmail.com\e[0m\n";     
 echo "\e[92m\e[1m +-- -- +=[ Available Format : vba , vbs , exe , java , js , php , hta , cfm , aspx , cmd , raw\e[0m\n";
 echo "\e[92m\e[1m +-- -- +=[ PHP! 3meth \e[0m\n\n";
-echo "[\e[31m1\e[0m] Hash Cracker (slow with 5+ chars)\n";
-echo "[\e[31m2\e[0m] Reverse Engeneering (windows platform)\n\n";
+echo "[\e[31m1\e[0m]MD5 Hash Cracker (slow with 5+ chars)\n";
+echo "[\e[31m2\e[0m] Reverse Engeneering \n\n";
 echo "Enter number 1-3 :"; $Meth = trim(fgets(STDIN,8));
 
 if($Meth == '1'){
