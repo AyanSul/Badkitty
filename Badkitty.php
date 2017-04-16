@@ -42,7 +42,7 @@ $a=array("
                     @@@@@@@@@@@@@@\e[96m @@           &@@@@@@%\e[0m
      ,   \e[31m#\e[0m        @@@@@@@@@@@@@\e[96m@@@@@@    @@@@@@@@@@#\e[0m
         \e[31m@  @\e[0m  .@@@@@@@@@@@@@@@@@@@@\e[96m@@@@@@@@@@@@ &@@     %\e[0m
-          @@@@@@@@@@@    @@  @@@@\e[96m@@@@@@@@@@@@@@ .#%,\e[0m
+          @@@@@@@@@@@    \e[31m@@\e[0m  @@@@\e[96m@@@@@@@@@@@@@@ .#%,\e[0m
     \e[31m*(*\e[0m   .@@ @@@@@@@@@@@@@@@@@\e[96m@@@@@@@@@@@@@@@ .       /\e[0m
        @@&@# @@@@@@@@@@@@@@@@@@@@@@\e[96m@@@@@@@@@@        /@\e[0m
        \e[31m@\e[0m    &@@@@@@@@@@@@@@@@@@@@@\e[96m@@@@@@@@@@@@@@@   @@\e[0m
@@ -52,15 +52,15 @@ $a=array("
                   *@@ @&&@@./@@@@@@@\e[96m@@@@@@@@@@@@@@@%\e[0m
                    @ @@@@@* @@@@@@@@@@\e[96m@@@@@@@@@@@@@ @@\e[0m
                    @%@@*  @@@@@@@@@@@@@@\e[96m@@@@@@@@@@@@\e[0m
-                    @@ %@ @@@ @@@@@@@@\e[96m@@@@@@@@@@@@@(@*\e[0m
-                   @ . %@@@ @# @@@@@@@@@\e[96m@@@@@@@@@@@.\e[0m
-                  @   @@@@ .@@@ %@@@@@@@@@\e[96m@@@@@@@@&\e[0m
+                    @@ %@ @@@ @@@@@@@@@@\e[96m@@@@@@@@@@@(@*\e[0m
+                   @ . %@@@ @# @@@@@@@@@@@\e[96m@@@@@@@@@.\e[0m
+                  @   @@@@ .@@@ %@@@@@@@@@@\e[96m@@@@@@@&\e[0m
                   @@@@@@@  @@@@@/@@@@@@@@@@\e[96m@@@@@@%\e[0m
-                          @@@@@@@,@@@@@@@@@@\e[96m@@@@\e[0m
- , .,,. . .. ..,.,, ,,  ,@@@@@@@@@@@@@@@@@@@@@(
-                       @@@@@@@@@@@@@@@@@@@@@
-                     #@@@@@@@@@@@@@@@@@@@.
-                   (@@@@@@@@@@@@@@@@@
+                          @@@@@@@,@@@@@@@@\e[96m@@@@@@\e[0m
+ , .,,. . .. ..,.,, ,,  ,@@@@@@@@@@@@@@@@\e[96m@@@@@(\e[0m
+                       @@@@@@@@@@@@@@@\e[96m@@@@@@\e[0m
+                     #@@@@@@@@@@@@@@@\e[96m@@@@.\e[0m
+                   (@@@@@@@@@@@@@@@@\e[96m@\e[0m
                 ,&@@@@@@@@&*            \e[31mDONT mess with BadKitty\e[0m \n\n",
 "
 \e[97m  _____                __  __  __      __    __                 \e[0m
@@ -71,7 +71,40 @@ $a=array("
 \e[96m    \ \____/\ \__/.\_\ \___,_\ \_\ \_\ \_\ \__\\ \__\\/`____ \  \e[0m
 \e[96m     \/___/  \/__/\/_/\/__,_ /\/_/\/_/\/_/\/__/ \/__/ `/___/> \ \e[0m
 \e[96m                                                       /\____ / \e[0m
-\e[96m                                                       \/____/  \e[0m\n\n");
+\e[96m                                                       \/____/  \e[0m\n\n",
+"                   ``                                          
+                                  \e[93m`/dMd/        yhmd`\e[0m                           
+                      \e[93m:hyy-       `/mMh-       .dNyy-\e[0m                       
+                      \e[93m:NNMs`       `mM/       +Nd.\e[0m                                                   
+                          \e[93m`oNo    .mMMNo  `oNMy`\e[0m
+                            \e[93m+Nd+:/mMMMMMNdNMMh\e[0m                                                                   
+                              \e[93mdMMMMMMMMMMMMM+\e[0m                                   
+                              \e[93m:NMMNmdhyyssss-\e[0m /hh-                              
+                         `hmy:`:oosyhddmmmmmmmMMM:                              
+                         .NMMMMMMMMMMMMMMMMNdhmMMN+                             
+                        :mMMMMy  ohNMMMMMd   sNMMMN:                            
+                        hMMMMMMdysydMMMMMNNMMMMMMMd`                            
+                        /NMMMMMMMMMMMMMMMMMMMMMMd+                              
+                         `+hNMMMMMMMMMMMMMMMNh+.                                
+                             .:/+ossymMMMMs-       \e[91mIt's all about\e[0m \e[97mControl . . .\e[0m                             
+                                      MMm.                                     
+                                     .yMMd`                                     
+                                     /MMMMy-                                    
+                                    -NMMMMMMs`                                  
+                                   :NMMMMMMMM:      -++-                                            
+                             `/yNMMMMMMMMMmo`      hMd`:h:                      
+                           `sNMMMMMMMMMMMy`        :MM/                         
+                          -mMMMMMMMMMMMMMo          yMm.                        
+                         .mMMMMMMMMNNMs+MN-         .mMs                        
+                         sMMMMMMMh:``yN++Nm-         /MN-                       
+                         hMMMMMMNssys.sN+:mm-        `NMy                       
+                         oMMMMMMMMMMm. +Ns.hNo       `mMh`                      
+                         `mMMMMMMMMM+   :mh-oNh-     :MMs                       
+                          .dMMMMMMMM+`   `yN+-hN+   -mMm.                       
+                           `omMMMMMNNNmdho`.:  .. .oNMd-                        
+                             `+hNMo/:-.`    ``.:+hNMd/`                         
+                                `:ohmNNNNNNNNNNmds/.                            
+                                     ``..--..``                                 \n");
 $random_keys=array_rand($a,1);
 echo $a[$random_keys]."\n";
 echo "\e[92m\e[1m +-- -- +=[ Script Name : Badkitty | Author: Ay@nSul | Cyber2kidds@gmail.com\e[0m\n";     
