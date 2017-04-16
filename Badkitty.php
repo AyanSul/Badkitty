@@ -1,9 +1,8 @@
 #!/usr/bin/php
 <?php
 system("clear");
-system("rm meta.rc");
-$exif = exif_read_data('/root/Desktop/azaz.jpeg');
-print_r($exif);
+if(file_exists("meta.rc")){
+system("rm meta.rc");}
 $a=array("          
 
           %---------------
@@ -417,7 +416,7 @@ echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 if(file_exists("meta.rc")){
 		system("msfconsole -r meta.rc");
 	}else{
-		die();
+		exit;
 	}
 }
 
