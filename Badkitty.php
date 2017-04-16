@@ -73,46 +73,46 @@ $a=array("
 \e[96m                                                       /\____ / \e[0m
 \e[96m                                                       \/____/  \e[0m\n\n",
 "                   ``                                          
-                                  \e[93m`/dMd/        yhmd`\e[0m                           
-                      \e[93m:hyy-       `/mMh-       .dNyy-\e[0m                       
-                      \e[93m:NNMs`       `mM/       +Nd.\e[0m                                                   
-                          \e[93m`oNo    .mMMNo  `oNMy`\e[0m
-                            \e[93m+Nd+:/mMMMMMNdNMMh\e[0m                                                                   
-                              \e[93mdMMMMMMMMMMMMM+\e[0m                                   
-                              \e[93m:NMMNmdhyyssss-\e[0m /hh-                              
-                         `hmy:`:oosyhddmmmmmmmMMM:                              
-                         .NMMMMMMMMMMMMMMMMNdhmMMN+                             
-                        :mMMMMy  ohNMMMMMd   sNMMMN:                            
-                        hMMMMMMdysydMMMMMNNMMMMMMMd`                            
-                        /NMMMMMMMMMMMMMMMMMMMMMMd+                              
-                         `+hNMMMMMMMMMMMMMMMNh+.                                
-                             .:/+ossymMMMMs-       \e[91mIt's all about\e[0m \e[97mControl . . .\e[0m                             
-                                      MMm.                                     
-                                     .yMMd`                                     
-                                     /MMMMy-                                    
-                                    -NMMMMMMs`                                  
-                                   :NMMMMMMMM:      -++-                                            
-                             `/yNMMMMMMMMMmo`      hMd`:h:                      
-                           `sNMMMMMMMMMMMy`        :MM/                         
-                          -mMMMMMMMMMMMMMo          yMm.                        
-                         .mMMMMMMMMNNMs+MN-         .mMs                        
-                         sMMMMMMMh:``yN++Nm-         /MN-                       
-                         hMMMMMMNssys.sN+:mm-        `NMy                       
-                         oMMMMMMMMMMm. +Ns.hNo       `mMh`                      
-                         `mMMMMMMMMM+   :mh-oNh-     :MMs                       
-                          .dMMMMMMMM+`   `yN+-hN+   -mMm.                       
-                           `omMMMMMNNNmdho`.:  .. .oNMd-                        
-                             `+hNMo/:-.`    ``.:+hNMd/`                         
-                                `:ohmNNNNNNNNNNmds/.                            
-                                     ``..--..``                                 \n");
+                                              
+                        \e[93myhmd`       `/dMd/        yhmd`\e[0m                           
+                        \e[93m:hyy-       `/mMh-       .dNyy-\e[0m                       
+                           \e[93mdN+       `mM/       +Nd.\e[0m                                                   
+                            \e[93m`oNo    .mMMNo  `oNMy`\e[0m
+                              \e[93m+Nd+:/mMMMMMNdNMMh\e[0m                                                                   
+                                \e[93mdMMMMMMMMMMMMM+\e[0m                                   
+                             \e[37m@@/\e[0m \e[93m:NMMNmdhyyss\e[0m \e[37m&@(\e[0m
+                             \e[37m&@@@@@@@@@@@@@@@@@@@,\e[0m
+                            \e[37m@@    ,@@@@@@@@@,   *@&\e[0m
+                            \e[37m@@@     &@@@@@,    .@@@\e[0m
+                             \e[37m&&@&, ./@@@@@.( ,@@@%\e[0m 
+                              \e[37m.@@&%#&@. #%&%%&@&\e[0m
+                                   \e[37m,(%@@@,\e[0m                    
+                                      \e[37mMMm.\e[0m                                     
+                                     \e[37m.yMMd`\e[0m                                     
+                                     \e[37m/MMMMy-\e[0m                                    
+                                    \e[37m-NMMMMMMs`\e[0m    \e[91mIt's all about\e[0m \e[97mControl\e[0m \e[91m. . .\e[0m                                   
+                                   \e[37m:NMMMMMMMM:      -++-\e[0m                                            
+                             \e[37m`/yNMMMMMMMMMmo`      hMd`:h:\e[0m                      
+                           \e[37m`sNMMMMMMMMMMMy`        :MM/\e[0m                         
+                          \e[37m-mMMMMMMMMMMMMMo          yMm.\e[0m                        
+                         \e[37m.mMMMMMMMMNNMs+MN-         .mMs\e[0m                        
+                         \e[37msMMMMMMMh:``yN++Nm-         /MN-\e[0m                       
+                         \e[37mhMMMMMMNssys.sN+:mm-        `NMy\e[0m                       
+                         \e[37moMMMMMMMMMMm. +Ns.hNo       `mMh`\e[0m                      
+                         \e[37m`mMMMMMMMMM+   :mh-oNh-     :MMs\e[0m                       
+                          \e[37m.dMMMMMMMM+`   `yN+-hN+   -mMm.\e[0m                       
+                           \e[37m`omMMMMMNNNmdho`.:  .. .oNMd-\e[0m                        
+                             \e[37m`+hNMo/:-.`    ``.:+hNMd/`\e[0m                         
+                                \e[37m`:ohmNNNNNNNNNNmds/.\e[0m                            
+                                     \e[37m``..--..``\e[0m                                 \n");
 $random_keys=array_rand($a,1);
 echo $a[$random_keys]."\n";
 echo "\e[92m\e[1m +-- -- +=[ Script Name : Badkitty | Author: Ay@nSul | Cyber2kidds@gmail.com\e[0m\n";     
 echo "\e[92m\e[1m +-- -- +=[ Available Format : vba , vbs , exe , java , js , php , hta , cfm , aspx , cmd , raw\e[0m\n";
 echo "\e[92m\e[1m +-- -- +=[ PHP! 3meth \e[0m\n\n";
-echo "[\e[31m1\e[0m] MD5 Hash Cracker (slow with 5+ chars)\n";
+echo "[\e[31m1\e[0m]MD5 Hash Cracker (slow with 5+ chars)\n";
 echo "[\e[31m2\e[0m] Reverse Engeneering \n\n";
-echo "Enter number 1-2 :"; $Meth = trim(fgets(STDIN,8));
+echo "Enter number 1-3 :"; $Meth = trim(fgets(STDIN,8));
 
 if($Meth == '1'){
 	function GTM() {
@@ -445,6 +445,8 @@ echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 	die("Unknown Format!\n");
 }
 if(file_exists("meta.rc")){
+		echo "Starting service postgresql . . . \n";
+		system("service postgresql start");
 		system("msfconsole -r meta.rc");
 	}else{
 		exit;
