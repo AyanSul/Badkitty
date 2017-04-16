@@ -268,7 +268,7 @@ if ($exe_arch == "32"){
     system("x86_64-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
 }
 system("rm c_file_temp.c");
-echo "/kitty.exe created!";
+echo "/kitty.exe created!\n\n";
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
 }
