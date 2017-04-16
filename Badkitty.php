@@ -180,7 +180,7 @@ function generate_shell(){
 	$nw = preg_replace("/\n/","",$un);	
 	return $nw;
 }	
-echo "\e[92m\e[1mType encode : \e[0m"; $lencode = trim(fgets(STDIN,2048));
+echo "\e[92m\e[1mFormat type : \e[0m"; $lencode = trim(fgets(STDIN,2048));
 function prep_PS_chunk($ps_shellcode){
 
 	$stringCommands="";
