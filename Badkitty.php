@@ -112,7 +112,7 @@ echo "\e[92m\e[1m +-- -- +=[ Available Format : vba , vbs , exe , java , js , ph
 echo "\e[92m\e[1m +-- -- +=[ PHP! 3meth \e[0m\n\n";
 echo "[\e[31m1\e[0m]MD5 Hash Cracker (slow with 5+ chars)\n";
 echo "[\e[31m2\e[0m] Reverse Engeneering \n\n";
-echo "Enter number 1-3 :"; $Meth = trim(fgets(STDIN,8));
+echo "Enter number 1-2 :"; $Meth = trim(fgets(STDIN,8));
 
 if($Meth == '1'){
 	function GTM() {
