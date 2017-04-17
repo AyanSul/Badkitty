@@ -293,7 +293,7 @@ int main()
 $ef = fopen("c_file_temp.c", "w") or die("Unable to open file!");
 fwrite($ef, $exe);
 fclose($ef); 
-echo "compiling please wait :) ...\n\n";
+echo "[*] compiling please wait :) ...\n\n";
 
 if ($exe_arch == "32"){
     system("i686-w64-mingw32-gcc c_file_temp.c -o kitty.exe");
